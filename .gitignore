@@ -1,0 +1,23 @@
+# Composer
+/vendor/
+composer.phar
+
+# Environment & secrets
+.env
+.env.*
+!.env.example
+
+# Storage data (keep folder, ignore runtime JSON)
+/storage/*.json
+!/storage/.gitkeep
+
+# IDE & OS
+.idea/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+
+# Logs & cache
+*.log
+.phpunit.result.cache
