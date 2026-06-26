@@ -9,6 +9,7 @@ composer.phar
 
 # Storage data (keep folder, ignore runtime JSON)
 /storage/*.json
+!/storage/*.seed.json
 !/storage/.gitkeep
 
 # IDE & OS
