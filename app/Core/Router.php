@@ -4,14 +4,15 @@ namespace App\Core;
 
 class Router
 {
+    /** @var array<string, array<string, callable|array{0: class-string, 1: string}>> */
     private array $routes = [];
 
-    public function get(string $uri, callable $callback)
+    public function get(string $uri, callable|array $callback): void
     {
         $this->routes['GET'][$uri] = $callback;
     }
 
-    public function post(string $uri, callable $callback)
+    public function post(string $uri, callable|array $callback): void
     {
         $this->routes['POST'][$uri] = $callback;
     }
@@ -29,6 +30,13 @@ class Router
             return;
         }
 
-        call_user_func($callback);
+        // If callback is array → Controller method
+        if (is_array($callback)) {
+            $controller = new $callback[0]();
+            $method = $callback[1];
+            call_user_func([$controller, $method]);
+        } else {
+            call_user_func($callback);
+        }
     }
 }

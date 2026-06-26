@@ -3,11 +3,16 @@
     "description": "Bank Management MVC application",
     "type": "project",
     "require": {
-        "php": ">=8.1"
+        "php": ">=8.1",
+        "tailwindcss/cli": "^4.1.11"
     },
     "autoload": {
         "psr-4": {
             "App\\": "app/"
         }
+    },
+    "scripts": {
+        "dev": "tailwindcss -i ./resources/css/app.css -o ./public/css/app.css --watch",
+        "build": "tailwindcss -i ./resources/css/app.css -o ./public/css/app.css --minify"
     }
 }

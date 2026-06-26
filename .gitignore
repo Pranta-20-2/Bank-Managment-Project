@@ -18,6 +18,11 @@ composer.phar
 .DS_Store
 Thumbs.db
 
+/docs/
+
+# Node
+/node_modules/
+
 # Logs & cache
 *.log
 .phpunit.result.cache
