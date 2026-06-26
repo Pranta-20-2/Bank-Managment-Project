@@ -19,7 +19,7 @@ php -S localhost:8000 -t public
 
 Open [http://localhost:8000](http://localhost:8000)
 
-On first run, sample data is seeded into `storage/users.json` and `storage/transactions.json`.
+User and transaction data is stored in `storage/users.json` and `storage/transactions.json`.
 
 To reset data, delete both JSON files and refresh the app.
 
@@ -72,7 +72,7 @@ Customers can also register at `/register`.
 ```
 app/
 ├── Controllers/     AuthController, AdminController, CustomerController
-├── Core/            Auth, Controller, File, Router, Seeder
+├── Core/            Auth, Controller, File, Router
 ├── Models/          User, Transaction
 └── Services/        AccountService (deposit, withdraw, transfer)
 
