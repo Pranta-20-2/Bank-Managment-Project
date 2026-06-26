@@ -1,20 +1,29 @@
 [
     {
-        "id": "admin-001",
-        "name": "Bank Admin",
-        "email": "admin@bank.com",
-        "password": "$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi",
+        "id": "user-6a3e54c094b2a5.69366608",
+        "name": "Pranta Das",
+        "email": "daspranta7@gmail.com",
+        "password": "$2y$10$krjTz18unrNg58EE2Q8MBO1cuHyQFvrrNfBBRjtbKC3ExQUT29e9S",
         "role": "admin",
-        "balance": 0,
-        "created_at": "2026-01-01T00:00:00+00:00"
+        "balance": 30000,
+        "created_at": "2026-06-26T12:30:24+02:00"
     },
     {
-        "id": "cust-001",
-        "name": "John Smith",
-        "email": "john@example.com",
-        "password": "$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi",
+        "id": "user-6a3ea0d3f1f547.57434265",
+        "name": "Test 1",
+        "email": "test1@gmail.com",
+        "password": "$2y$10$ksjCjXoXR2ph7YWdu2.ReuFafpK3AFDGsdfvfuC07sLkqtZd/7oBi",
         "role": "customer",
-        "balance": 5000,
-        "created_at": "2026-01-01T00:00:00+00:00"
+        "balance": 300000,
+        "created_at": "2026-06-26T17:55:00+02:00"
+    },
+    {
+        "id": "user-6a3ea11eb8a4e3.00637940",
+        "name": "Test 2",
+        "email": "test2@gmail.com",
+        "password": "$2y$10$UHzmFkoxaKZEREzB.rkKLezvdRl5ESP7gsZJ3WOOIv6Qc27el1kXy",
+        "role": "customer",
+        "balance": 4700000,
+        "created_at": "2026-06-26T17:56:14+02:00"
     }
 ]
