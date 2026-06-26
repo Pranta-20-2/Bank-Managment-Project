@@ -12,8 +12,8 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     && apt-get install -y nodejs \
     && rm -rf /var/lib/apt/lists/*
 
-COPY composer.json composer.lock ./
-RUN composer install --no-dev --optimize-autoloader --no-interaction
+COPY composer.json ./
+RUN composer dump-autoload -o --no-interaction
 
 COPY package.json package-lock.json ./
 RUN npm ci
