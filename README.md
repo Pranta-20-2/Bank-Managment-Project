@@ -18,6 +18,7 @@ php -S localhost:8000 -t public
 ```
 
 Open [http://localhost:8000](http://localhost:8000)
+Deploy [https://bank-managment-project.onrender.com](https://bank-managment-project.onrender.com/)
 
 User and transaction data is stored in `storage/users.json` and `storage/transactions.json`.
 
