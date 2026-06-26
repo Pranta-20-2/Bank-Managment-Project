@@ -1,0 +1,12 @@
+node_modules
+vendor
+.git
+.gitignore
+.env
+.env.*
+*.md
+docs
+.idea
+.vscode
+storage/*.json
+!storage/*.seed.json
